@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LastView">
         <activity
+            android:name=".Insumos_Act"
+            android:exported="true" />
+        <activity
             android:name=".Home_ACT"
             android:exported="true" />
         <activity
