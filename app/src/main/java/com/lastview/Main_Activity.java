@@ -62,6 +62,7 @@ public class Main_Activity extends AppCompatActivity {
         if ( checkUser() == 0 )
         {
             Intent i = new Intent(this, Home_ACT.class);
+            i.putExtra("name", nUsuario.getText().toString());
             startActivity(i);
             clean();
         } else {

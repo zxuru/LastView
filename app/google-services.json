@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "835348890908",
+    "project_id": "maiproyecto-115e9",
+    "storage_bucket": "maiproyecto-115e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835348890908:android:44aa316fed6c51743aa6d9",
+        "android_client_info": {
+          "package_name": "com.lastview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835348890908-olmbs1g1t4g68ogd1cpv1u28kmc81q1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDOQsmN4Y0SvKp4KJay9q7eis8R2oss7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835348890908-olmbs1g1t4g68ogd1cpv1u28kmc81q1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
