@@ -22,6 +22,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="156dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="72dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -98,10 +108,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="20dp"
+                    android:height="46dp"
                     android:background="@drawable/rounded_button"
+                    android:minHeight="48dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
-                    android:text="Button" />
+                    android:text="Button"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <Button
                     android:id="@+id/button6"
@@ -110,9 +123,11 @@
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="20dp"
                     android:background="@drawable/rounded_button"
+                    android:minHeight="48dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
-                    android:text="Button" />
+                    android:text="Button"
+                    tools:ignore="TouchTargetSizeCheck" />
             </TableRow>
 
         </TableLayout>
