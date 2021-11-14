@@ -16,7 +16,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lastview"
+            android:contentDescription="TODO" />
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
@@ -26,5 +34,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="328dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="44dp"
+                android:gravity="center"
+                android:text="Todos nuestros productos son manipulados cumpliendo con todas las normas de higiene necesarias.\n\nSi no recibio el producto solicitado puede visitar nuestro local y con gusto veremos la mejor solucion para el problema."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="72dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="70dp"
+                    android:layout_height="62dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/magen1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="73dp"
+                    android:layout_height="62dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/magen2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
