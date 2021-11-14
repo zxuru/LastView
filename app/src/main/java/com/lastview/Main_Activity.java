@@ -49,6 +49,14 @@ public class Main_Activity extends AppCompatActivity {
                 new Task().execute();
             }
         });
+
+        btnOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
     }
 
     public Integer checkUser()

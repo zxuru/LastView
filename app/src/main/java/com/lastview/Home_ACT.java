@@ -2,8 +2,10 @@ package com.lastview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -32,5 +34,25 @@ public class Home_ACT extends AppCompatActivity {
 
         //MediaController media = new MediaController(this);
         //video.setMediaController(media);
+    }
+
+    public void info(View view) {
+        Intent i = new Intent(this, Info_Act.class);
+        startActivity(i);
+    }
+
+    public void insumos(View view) {
+        Intent i = new Intent(this, Insumos_Act.class);
+        startActivity(i);
+    }
+
+    public void perfil(View view) {
+        Intent i = new Intent(this, Perfil.class);
+        startActivity(i);
+    }
+
+    public void pedidos(View view) {
+        Intent i = new Intent(this, Pedidos.class);
+        startActivity(i);
     }
 }
