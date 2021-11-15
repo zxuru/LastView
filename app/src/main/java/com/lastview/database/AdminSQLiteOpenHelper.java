@@ -18,13 +18,13 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREAR_TABLA_USUARIO);
         db.execSQL("CREATE TABLE IF NOT EXISTS productos (ID INTEGER primary key AUTOINCREMENT, nombre TEXT, cant INTEGER, precio INTEGER);");
-        db.execSQL("CREATE TABLE IF NOT EXISTS pedidos (ID INTEGER primary key AUTOINCREMENT, productos TEXT, cliente INTEGER)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS pedidos (ID INTEGER primary key AUTOINCREMENT, productos TEXT, cant INTEGER, cliente INTEGER)");
 
         db.execSQL("INSERT INTO productos (ID, nombre, cant, precio) VALUES (null, 'Papel OCB', 10, 1500)");
         db.execSQL("INSERT INTO productos (ID, nombre, cant, precio) VALUES (null, 'Tabaco Vainilla', 20, 2600)");
         db.execSQL("INSERT INTO productos (ID, nombre, cant, precio) VALUES (null, 'Filtro Delgado', 15, 2000)");
         db.execSQL("INSERT INTO usuarios (ID, username, password) VALUES (null, 'hugo', '123')");
-        db.execSQL("INSERT INTO pedidos (ID, productos, cliente) VALUES (null, 'Filtros OCB', 1)");
+        db.execSQL("INSERT INTO pedidos (ID, productos, cant, cliente) VALUES (null, 'Filtros OCB', 2, 1)");
     }
 
     @Override

@@ -8,15 +8,14 @@
     tools:context=".Pedidos">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="380dp"
-        android:layout_height="400dp"
+        android:layout_width="364dp"
+        android:layout_height="643dp"
         app:cardCornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,41 +25,26 @@
                 android:id="@+id/tvPedidos"
                 android:layout_width="154dp"
                 android:layout_height="54dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="28dp"
                 android:gravity="center"
                 android:text="TextView"
                 android:textColor="@color/purple_700"
                 android:textSize="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/txtPedidos"
-                android:layout_width="255dp"
-                android:layout_height="123dp"
-                android:layout_marginTop="40dp"
+                android:layout_width="305dp"
+                android:layout_height="151dp"
+                android:layout_marginTop="36dp"
                 android:gravity="center"
                 android:text="TextView"
-                android:textSize="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
-
-            <Button
-                android:id="@+id/btnVolverPedidos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="Volver"
-                android:text="Volver"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.813"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtPedidos"
-                app:layout_constraintVertical_bias="0.578" />
 
             <TextView
                 android:id="@+id/tvInfo"
@@ -74,6 +58,71 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvPedidos" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="271dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btnPedir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="40dp"
+                android:text="Hacer Pedido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <EditText
+                android:id="@+id/edNumber"
+                android:layout_width="104dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:hint="Cantidad"
+                android:inputType="number"
+                app:layout_constraintEnd_toStartOf="@+id/btnPedir"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="290dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPedidos">
+
+                <Button
+                    android:id="@+id/btnCargar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:onClick="load"
+                    android:text="Cargar" />
+
+                <Button
+                    android:id="@+id/btnVolverPedidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="Volver"
+                    android:text="Volver" />
+            </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
