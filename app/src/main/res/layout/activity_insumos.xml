@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,8 +26,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:text="Insumos LastView"
-                android:textSize="20dp"
                 android:textColor="@color/purple_700"
+                android:textSize="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.13"
                 app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +63,7 @@
                 android:layout_marginVertical="20dp"
                 android:layout_marginBottom="64dp"
                 android:background="@drawable/rounded_button"
+                android:onClick="tY"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
                 android:text="Calcular"
@@ -89,7 +90,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvInsInfo" />
+                app:layout_constraintTop_toBottomOf="@+id/tvInsInfo"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

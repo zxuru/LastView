@@ -72,19 +72,19 @@
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/rounded_button"
                 android:text="Iniciar Sesión"
-                app:layout_constraintBottom_toTopOf="@+id/btnSalir"
+                app:layout_constraintBottom_toTopOf="@+id/btnRegistro"
                 app:layout_constraintEnd_toEndOf="parent"
 
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/btnSalir"
+                android:id="@+id/btnRegistro"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="84dp"
                 android:background="@drawable/rounded_button"
-                android:text="Salir"
+                android:text="Registrarse"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.495"
@@ -99,18 +99,18 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnSalir"
+                app:layout_constraintTop_toBottomOf="@+id/btnRegistro"
                 app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/tV6"
-                android:layout_width="222dp"
-                android:layout_height="25dp"
+                android:layout_width="319dp"
+                android:layout_height="27dp"
                 android:gravity="center"
                 app:layout_constraintBottom_toTopOf="@+id/pbar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnSalir" />
+                app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

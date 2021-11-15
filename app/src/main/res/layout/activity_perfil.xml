@@ -9,12 +9,95 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
-        android:layout_height="400dp"
+        android:layout_height="600dp"
         app:cardCornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="TextView"
+                android:textSize="20dp"
+                android:textColor="@drawable/gradient_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPerfil">
+
+                <EditText
+                    android:id="@+id/txtUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nombre de Usuario"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="104dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <Button
+                    android:id="@+id/btnUpdPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="updPassUsu"
+                    android:text="Actualizar Contraseña" />
+
+                <Button
+                    android:id="@+id/btnUpdUsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="updNomUsu"
+                    android:text="Actualizar nombre de usuario" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp" />
+
+                <Button
+                    android:id="@+id/btnDeleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="deleteUser"
+                    android:text="Eliminar cuenta" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

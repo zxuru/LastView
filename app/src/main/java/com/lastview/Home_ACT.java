@@ -13,16 +13,13 @@ public class Home_ACT extends AppCompatActivity {
 
     private VideoView video;
 
+    private String newString;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         getSupportActionBar().hide();
-
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            String name = extras.getString("name");
-        }
 
         video = findViewById(R.id.videoView);
 
@@ -32,8 +29,19 @@ public class Home_ACT extends AppCompatActivity {
 
         video.start();
 
-        //MediaController media = new MediaController(this);
-        //video.setMediaController(media);
+        MediaController media = new MediaController(this);
+        video.setMediaController(media);
+
+        if (savedInstanceState == null) {
+            Bundle extras = getIntent().getExtras();
+            if(extras == null) {
+                newString= null;
+            } else {
+                newString= extras.getString("id");
+            }
+        } else {
+            newString= (String) savedInstanceState.getSerializable("id");
+        }
     }
 
     public void info(View view) {
@@ -48,11 +56,13 @@ public class Home_ACT extends AppCompatActivity {
 
     public void perfil(View view) {
         Intent i = new Intent(this, Perfil.class);
+        i.putExtra("id", newString);
         startActivity(i);
     }
 
     public void pedidos(View view) {
         Intent i = new Intent(this, Pedidos.class);
+        i.putExtra("id", newString);
         startActivity(i);
     }
 }
